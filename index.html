@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tic-Tac-Toe</title>
+</head>
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <h3>Turn: <span id='turnText'>X</span></h3>
+    <h3 id='winText'></h3>
+    <button onclick='restart()'>Restart</button>
+    <br>
+    <table>
+        <tr>
+            <td><button id='x0y0' onclick='gt(0,0)'> </button></td>
+            <td><button id='x0y1' onclick='gt(0,1)'> </button></td>
+            <td><button id='x0y2' onclick='gt(0,2)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x1y0' onclick='gt(1,0)'> </button></td>
+            <td><button id='x1y1' onclick='gt(1,1)'> </button></td>
+            <td><button id='x1y2' onclick='gt(1,2)'> </button></td>
+        </tr>
+        <tr>
+            <td><button id='x2y0' onclick='gt(2,0)'> </button></td>
+            <td><button id='x2y1' onclick='gt(2,1)'> </button></td>
+            <td><button id='x2y2' onclick='gt(2,2)'> </button></td>
+        </tr>
+    </table>
+    <br>
+    <table>
+        <tr>
+            <td>X Wins</td>
+            <td>|</td>
+            <td>O Wins</td>
+        </tr>
+        <tr>
+            <td id='xWins'>0</td>
+            <td>|</td>
+            <td id='oWins'>0</td>
+        </tr>
+    </table>
+    <script src='code.js'></script>
+</body>
+
+</html>
